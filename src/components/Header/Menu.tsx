@@ -4,13 +4,13 @@ export function Menu()
         <nav >
             <ul className="flex gap-2">
                 <li>
-                    <a href="/"> Home</a>
+                    <a href=""> Home</a>
                 </li>
                 <li>
-                    <a href="/"> Login</a>
+                    <a href="/login"> Login</a>
                 </li>
                 <li>
-                    <a href="/"> Cadastro</a>
+                    <a href="/registrar"> Cadastro</a>
                 </li>
             </ul>
         </nav>
