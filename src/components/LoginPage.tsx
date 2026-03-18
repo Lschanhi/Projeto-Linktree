@@ -1,7 +1,9 @@
 export function LoginPage() {
 
   return (
-    <div className="bg-[#000000] min-h-screen font-display border-4 border-[#D3AF37]">
+    <div className="bg-[#000000] min-h-screen font-display border-4 border-[#D3AF37] 
+                      hover:bg-[url('/imgs/milos.gif')] 
+                      bg-cover bg-center bg-no-repeat transition-all duration-500">
 
       <div className="relative flex h-auto flex-col bg-[#000000] ">
 
@@ -15,8 +17,7 @@ export function LoginPage() {
         <div className="flex-1 flex flex-col justify-full px-70 py-8">
 
           <div className="min-w-125 bg-center bg-no-repeat bg-cover rounded-2xl min-h-100 
-                            border-4 border-[#D3AF37] mx-auto bg-[url('/imgs/logomarca3.jpg')]
-                            ">
+                            border-4 border-[#D3AF37] mx-auto bg-[url('/imgs/Omnimarket.jpg')]">
 
           </div>
           <div className="flex-1 text-center text-5xl uppercase font-bold text-[#D3AF37] p-20
