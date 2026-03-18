@@ -14,7 +14,7 @@ function App() {
 
         <div className="flex-1 flex flex-col justify-full px-70 py-8">
 
-          <div className="min-w-125 bg-center bg-no-repeat bg-cover rounded-2xl min-h-100 
+          <div className="min-w-full bg-center bg-no-repeat bg-cover rounded-2xl min-h-100 
                             border-4 border-[#D3AF37] mx-auto bg-[url('/imgs/logomarca3.jpg')]
                             ">
 
