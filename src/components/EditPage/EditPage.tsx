@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from "react"
 import { Input } from "./Input"
 
 export const EditPage = () => {
 
-    const [name, setName]=useState("Lucas Soler");
+   const [name, setName] = useState("Zezinho");
 
 
     return (
@@ -13,7 +13,7 @@ export const EditPage = () => {
                 <main className="w-9/12 bg-red-800 h-screen p-4 ">
 
                     <form className=" space-y-4">
-                        <Input name="Nome" id="name" placerholder="EX: Lucas" />
+                        <Input name="Nome" id="name" placerholder="EX: Lucas" value={name} onChange={(event)=>{setName(event.target.value);}}/>
                         <Input name="GitHub" id="github" placerholder="EX: Lschanhi" />
 
                         <div className=" grid grid-cols-3 gap-4">
@@ -29,7 +29,7 @@ export const EditPage = () => {
                 </main>
                 <aside className="w-3/12 bg-red-300 h-screen">
 
-                    Seu nome : 
+                    Seu Nome: {name}
                 </aside>
 
             </div>
