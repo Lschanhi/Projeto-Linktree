@@ -2,38 +2,10 @@ import { useState } from "react";
 import { EditPageMain } from "./EditPageMain";
 import { EditPagePreview } from "./EditPagePreview";
 
-interface CustomLink {
-    name: string;
-    url: string;
-}
+
 
 export const EditPage = () => {
-    const [name, setName] = useState("Zezinho");
-
-    const [github, setGithub] = useState("");
-    const [linkedin, setLinkedin] = useState("");
-    const [instagram, setInstagram] = useState("");
-    const [tiktok, setTiktok] = useState("");
-    const [facebook, setFacebook] = useState("");
-    const [youtube, setYoutube] = useState("");
-
-    const [links, setLinks] = useState<CustomLink[]>([]);
-
-    const handleAddLink = () => {
-        setLinks([...links, { name: "", url: "" }]);
-    };
-
-    const handleLinkNameChange = (index: number, value: string) => {
-        const newLinks = [...links];
-        newLinks[index].name = value;
-        setLinks(newLinks);
-    };
-
-    const handleLinkUrlChange = (index: number, value: string) => {
-        const newLinks = [...links];
-        newLinks[index].url = value;
-        setLinks(newLinks);
-    };
+   
 
     return (
         <div className="min-h-screen bg-black py-4">
