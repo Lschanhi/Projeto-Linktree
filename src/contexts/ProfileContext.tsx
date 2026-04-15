@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 import {links} from
 
 
@@ -71,9 +71,11 @@ export const ProfileProvider = ({children}: ProfileProviderProps)=>{
             </ProfileContext.Provider>
         );
         
-    export const useProfile = () =>{
-        
+   
+
+
+};
+
+ export const useProfile = () =>{
+        return useContext(ProfileContext);
     }
-
-
-}
